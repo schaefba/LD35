@@ -8,6 +8,7 @@ public class Patrol : MonoBehaviour
     public Transform[] Points;
     public int Speed;
 
+    private Transform transform;
     private int destPoint = 0;
 
     void Start()
@@ -15,7 +16,8 @@ public class Patrol : MonoBehaviour
         // Disabling auto-braking allows for continuous movement
         // between points (ie, the agent doesn't slow down as it
         // approaches a destination point).
-        GotoNextPoint();
+        //GotoNextPoint();
+        transform = GetComponentInChildren<Transform>();
     }
 
 
@@ -44,7 +46,7 @@ public class Patrol : MonoBehaviour
         var target = Points[destPoint];
 
         // Set the agent to go to the currently selected destination.
-        if (Vector3.Distance(transform.position, target.position) > 0.5f)
+        if (Vector3.Distance(transform.position, target.position) > 0.1f)
         {
             float step = Speed * Time.deltaTime;
             transform.position = Vector3.MoveTowards(transform.position, target.position, step);
