@@ -46,6 +46,13 @@ public class ShapeShift : MonoBehaviour {
 
 		shifting = true;
 		yield return new WaitForSeconds (secondsUntilShift);
+		for(int i = 0; i < 10; i++)
+		{
+			spriteRenderer.color = Color.red;
+			yield return new WaitForSeconds(.3f - (i*.02f));
+			spriteRenderer.color = Color.white;
+			yield return new WaitForSeconds(.3f - (i*.02f));
+		}
 		spriteRenderer.color = Color.red;
 		shifted = true;
 		yield return new WaitForSeconds (timeForShift);

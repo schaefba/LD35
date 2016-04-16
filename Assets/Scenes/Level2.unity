@@ -85,42 +85,42 @@ NavMeshSettings:
     cellSize: 0.16666667
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &252524902
+--- !u!1001 &55312104
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 430386, guid: 994936bb045b74d70bf95cd8e348e764, type: 2}
+    - target: {fileID: 450468, guid: 994936bb045b74d70bf95cd8e348e764, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -6.449149
+      value: -7.57
       objectReference: {fileID: 0}
-    - target: {fileID: 430386, guid: 994936bb045b74d70bf95cd8e348e764, type: 2}
+    - target: {fileID: 450468, guid: 994936bb045b74d70bf95cd8e348e764, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1.07744
+      value: -4.03
       objectReference: {fileID: 0}
-    - target: {fileID: 430386, guid: 994936bb045b74d70bf95cd8e348e764, type: 2}
+    - target: {fileID: 450468, guid: 994936bb045b74d70bf95cd8e348e764, type: 2}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 430386, guid: 994936bb045b74d70bf95cd8e348e764, type: 2}
+    - target: {fileID: 450468, guid: 994936bb045b74d70bf95cd8e348e764, type: 2}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 430386, guid: 994936bb045b74d70bf95cd8e348e764, type: 2}
+    - target: {fileID: 450468, guid: 994936bb045b74d70bf95cd8e348e764, type: 2}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 430386, guid: 994936bb045b74d70bf95cd8e348e764, type: 2}
+    - target: {fileID: 450468, guid: 994936bb045b74d70bf95cd8e348e764, type: 2}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 430386, guid: 994936bb045b74d70bf95cd8e348e764, type: 2}
+    - target: {fileID: 450468, guid: 994936bb045b74d70bf95cd8e348e764, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 430386, guid: 994936bb045b74d70bf95cd8e348e764, type: 2}
+    - target: {fileID: 450468, guid: 994936bb045b74d70bf95cd8e348e764, type: 2}
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
