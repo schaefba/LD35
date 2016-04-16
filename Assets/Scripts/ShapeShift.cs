@@ -10,7 +10,8 @@ public class ShapeShift : MonoBehaviour {
 
 	private SpriteRenderer spriteRenderer;
 	private Sprite originalSprite;
-	private bool transforming;
+	private bool shifting;
+	private bool shifted;
 	//private float secondsUntilShift;
 	//private Time
 
@@ -18,7 +19,8 @@ public class ShapeShift : MonoBehaviour {
 
 		spriteRenderer = GetComponent<SpriteRenderer> ();
 		originalSprite = spriteRenderer.sprite;
-		transforming = false;
+		shifting = false;
+		shifted = false;
 	}
 
 	// Use this for initialization
@@ -31,7 +33,7 @@ public class ShapeShift : MonoBehaviour {
 	void Update () {
 	
 		float secondsUntilShift = Random.Range (minimumTimeUntilShift, maximumTimeUntilShift);
-		if (!transforming) {
+		if (!shifting) {
 			StartCoroutine (waitAndShift (secondsUntilShift));
 		}
 		//yield waitAndShift(secondsUntilShift);
@@ -42,11 +44,19 @@ public class ShapeShift : MonoBehaviour {
 
 	IEnumerator waitAndShift(float secondsUntilShift) {
 
-		transforming = true;
+		shifting = true;
 		yield return new WaitForSeconds (secondsUntilShift);
 		spriteRenderer.color = Color.red;
+		shifted = true;
 		yield return new WaitForSeconds (timeForShift);
 		spriteRenderer.color = Color.white;
-		transforming = false;
+		shifted = false;
+		shifting = false;
 	}
+
+	public bool isShifted() {
+
+		return shifted;
+	}
+
 }

@@ -7,11 +7,14 @@ public class PlayerController : MonoBehaviour {
 
 	private Rigidbody2D rigidBody;
 
+	void Awake () {
 
+		rigidBody = GetComponent<Rigidbody2D> ();
+	}
 
 	// Use this for initialization
 	void Start () {
-		rigidBody = GetComponent<Rigidbody2D> ();
+		
 	}
 	
 	// Update is called once per frame
