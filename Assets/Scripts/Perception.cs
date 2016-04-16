@@ -29,16 +29,18 @@ public class Perception : MonoBehaviour {
 			Vector2 directionToPlayer = player.transform.position - gameObject.transform.position;//Vector2.Distance (gameObject, playerShapeShift.gameObject);
 
 			if (directionToPlayer.sqrMagnitude < sqrViewRange) {
-				Debug.Log ("Within range");
+				//Debug.Log ("Within range");
 				RaycastHit2D hit = Physics2D.Raycast (gameObject.transform.position, directionToPlayer);
 				Debug.DrawRay (gameObject.transform.position, directionToPlayer,Color.green);
 				// Player is within view range of the "enemy"
 				if (hit != null) {
 					
 					if (hit.transform == player.transform) {
-						Debug.Log ("I CAN SEE THE PLAYER NOW");
+						//Debug.Log ("I CAN SEE THE PLAYER NOW");
+						GameManager.LevelFailed ();
 						// enemy can see the player!
 					} else {
+						
 						// there is something obstructing the view
 					}
 				}

@@ -22,19 +22,19 @@ public class PlayerController : MonoBehaviour {
 
 		if(Input.GetKey(KeyCode.A)) //left
 		{
-			rigidBody.transform.Translate(-Vector2.right * Speed);
+			rigidBody.transform.Translate(-Vector2.right * Speed * Time.deltaTime);
 		}
 		else if(Input.GetKey(KeyCode.D)) //right
 		{
-			rigidBody.transform.Translate(Vector2.right * Speed);
+			rigidBody.transform.Translate(Vector2.right * Speed * Time.deltaTime);
 		}
 		else if(Input.GetKey(KeyCode.S)) //down
 		{
-			rigidBody.transform.Translate(-Vector2.up * Speed);
+			rigidBody.transform.Translate(-Vector2.up * Speed * Time.deltaTime);
 		}
 		else if(Input.GetKey(KeyCode.W)) //up
 		{
-			rigidBody.transform.Translate(Vector2.up * Speed);
+			rigidBody.transform.Translate(Vector2.up * Speed * Time.deltaTime);
 		}
 	}
 }
