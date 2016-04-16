@@ -32,7 +32,6 @@ public class PlayerController : MonoBehaviour {
 		else if(Input.GetKey(KeyCode.W)) //up
 		{
 			rigidBody.transform.Translate(Vector2.up * Speed);
-
 		}
 	}
 }
