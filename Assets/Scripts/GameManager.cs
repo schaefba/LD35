@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour {
 	public static float timeBetweenLevels;
 
 	void Awake() {
-		DontDestroyOnLoad (gameObject);
+		//DontDestroyOnLoad (gameObject);
 		numberOfIntroScenes = introSceneCount;
 		timeBetweenLevels = secondsBetweenLevels;
 	}

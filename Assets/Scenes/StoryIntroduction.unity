@@ -85,62 +85,16 @@ NavMeshSettings:
     cellSize: 0.16666667
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &771500473
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 450598, guid: dcd24bff8609b44329e613be20b3d103, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 450598, guid: dcd24bff8609b44329e613be20b3d103, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 450598, guid: dcd24bff8609b44329e613be20b3d103, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -10
-      objectReference: {fileID: 0}
-    - target: {fileID: 450598, guid: dcd24bff8609b44329e613be20b3d103, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 450598, guid: dcd24bff8609b44329e613be20b3d103, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 450598, guid: dcd24bff8609b44329e613be20b3d103, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 450598, guid: dcd24bff8609b44329e613be20b3d103, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 450598, guid: dcd24bff8609b44329e613be20b3d103, type: 2}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 11484120, guid: dcd24bff8609b44329e613be20b3d103, type: 2}
-      propertyPath: introSceneCount
-      value: 2
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: dcd24bff8609b44329e613be20b3d103, type: 2}
-  m_IsPrefabParent: 0
---- !u!1 &848423826
+--- !u!1 &1021157986
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 4
   m_Component:
-  - 224: {fileID: 848423827}
-  - 222: {fileID: 848423829}
-  - 114: {fileID: 848423828}
+  - 224: {fileID: 1021157987}
+  - 222: {fileID: 1021157989}
+  - 114: {fileID: 1021157988}
   m_Layer: 5
   m_Name: IntroText
   m_TagString: Untagged
@@ -148,29 +102,29 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &848423827
+--- !u!224 &1021157987
 RectTransform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 848423826}
+  m_GameObject: {fileID: 1021157986}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1741382072}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 86}
-  m_SizeDelta: {x: -600, y: -522}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -600, y: -200}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &848423828
+--- !u!114 &1021157988
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 848423826}
+  m_GameObject: {fileID: 1021157986}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
@@ -201,12 +155,12 @@ MonoBehaviour:
     on dates. \n\nExcept you're a shapeshifter. And all of your life you've been able
     to control your ability. You could shapeshift at will. So it hasn't caused you
     any problems."
---- !u!222 &848423829
+--- !u!222 &1021157989
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 848423826}
+  m_GameObject: {fileID: 1021157986}
 --- !u!1 &1137659097
 GameObject:
   m_ObjectHideFlags: 0
@@ -324,10 +278,10 @@ RectTransform:
   m_Children:
   - {fileID: 1887448287}
   m_Father: {fileID: 1741382072}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 425, y: -250}
+  m_AnchoredPosition: {x: 321, y: -168}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1553788169
@@ -341,7 +295,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d23f98ab5459344989b6a931c31f57cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  introText: {fileID: 848423828}
+  introText: {fileID: 1021157988}
+  numberOfIntroScenes: 2
 --- !u!114 &1553788170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -454,8 +409,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 848423827}
   - {fileID: 1553788168}
+  - {fileID: 1021157987}
   m_Father: {fileID: 1921055344}
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}

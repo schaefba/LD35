@@ -21,7 +21,7 @@ public class IntroManager : MonoBehaviour {
 	private int textPosition = 0;
 
 	public Text introText;
-
+	public int numberOfIntroScenes;
 
 	// Use this for initialization
 	void Start () {
@@ -43,7 +43,7 @@ public class IntroManager : MonoBehaviour {
 		} 
 		else {
 
-			SceneManager.LoadScene (GameManager.numberOfIntroScenes);
+			SceneManager.LoadScene (numberOfIntroScenes);
 		}
 	}
 }
