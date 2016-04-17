@@ -37,4 +37,18 @@ public class GameManager : MonoBehaviour {
 		//UIManager.ClearFailedPanel ();
 	}
 
+	public void RestartGame () {
+
+		Time.timeScale = 1.0f;
+		SceneManager.LoadScene (0);
+	}
+
+	public void QuitGame () {
+		#if UNITY_EDITOR
+			UnityEditor.EditorApplication.isPlaying = false;
+		#else
+			Application.Quit();
+		#endif 
+	}
+
 }
