@@ -7,32 +7,38 @@ public class Perception : MonoBehaviour {
 
 	private float sqrViewRange;
 	private GameObject player;
+    private Light pointLight;
 	private ShapeShift playerShapeShift;
 
-	void Awake() {
-
-		sqrViewRange = viewRange * viewRange;
+    void Awake() {
+		//sqrViewRange = viewRange * viewRange;
 	}
 
 	// Use this for initialization
 	void Start () {
 
 		player = GameObject.FindGameObjectWithTag ("Player");
-		playerShapeShift = player.GetComponent<ShapeShift>(); 
+        pointLight = gameObject.transform.FindChild("Area Light").GetComponent<Light>();
+		playerShapeShift = player.GetComponent<ShapeShift>();
+
+        sqrViewRange = viewRange * viewRange;
+        pointLight.range = sqrViewRange;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
-		if (playerShapeShift.isShifted ()) {
+        Debug.DrawLine(gameObject.transform.position, new Vector3(gameObject.transform.position.x - viewRange, gameObject.transform.position.y, 0), Color.red, Time.deltaTime, false);
+
+        if (playerShapeShift.isShifted ()) {
 
 			Vector2 directionToPlayer = player.transform.position - gameObject.transform.position;//Vector2.Distance (gameObject, playerShapeShift.gameObject);
+            
 
-			if (directionToPlayer.sqrMagnitude < sqrViewRange) {
+            if (directionToPlayer.sqrMagnitude <= sqrViewRange) {
 				//Debug.Log ("Within range");
 				RaycastHit2D hit = Physics2D.Raycast (gameObject.transform.position, directionToPlayer);
-				Debug.DrawRay (gameObject.transform.position, directionToPlayer,Color.green);
-				// Player is within view range of the "enemy"
+                // Player is within view range of the "enemy"
 				if (hit != null) {
 					
 					if (hit.transform == player.transform) {
@@ -44,13 +50,7 @@ public class Perception : MonoBehaviour {
 						// there is something obstructing the view
 					}
 				}
-
-
 			}
-
-
-
-			// if within range, raycast
 		}
 	}
 }
