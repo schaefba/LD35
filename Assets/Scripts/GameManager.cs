@@ -50,6 +50,14 @@ public class GameManager : MonoBehaviour {
 		SceneManager.LoadScene (0);
 	}
 
+	/// <summary>
+	/// Simple loading of the next scene. Does not handle transitions between gameplay levels. Instead <see cref="LoadNextLevel"/>
+	/// </summary>
+	public void NextScene () {
+
+		SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex + 1);
+	}
+
 	public void QuitGame () {
 		#if UNITY_EDITOR
 			UnityEditor.EditorApplication.isPlaying = false;
