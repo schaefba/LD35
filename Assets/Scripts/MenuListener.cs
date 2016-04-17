@@ -24,12 +24,12 @@ public class MenuListener : MonoBehaviour {
 
 			if (menuLoaded == false) {
 				
-				UIManager.LoadMenuPanel ();
+				UIManager.ShowMenuPanel ();
 				Time.timeScale = 0.0f;
 				menuLoaded = true;
 			} else {
 
-				UIManager.ClearMenuPanel ();
+				UIManager.HideMenuPanel ();
 				Time.timeScale = 1.0f;
 				menuLoaded = false;
 			}

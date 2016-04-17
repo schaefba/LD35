@@ -7,9 +7,16 @@ public class GameManager : MonoBehaviour {
 	//private
 
 	//public static UIManager UI;
+	public int introSceneCount;
+	public float secondsBetweenLevels;
+
+	public static int numberOfIntroScenes;
+	public static float timeBetweenLevels;
 
 	void Awake() {
 		DontDestroyOnLoad (gameObject);
+		numberOfIntroScenes = introSceneCount;
+		timeBetweenLevels = secondsBetweenLevels;
 	}
 
 	// Use this for initialization
@@ -25,7 +32,7 @@ public class GameManager : MonoBehaviour {
 
 	public static void LevelFailed (string failText) {
 
-		UIManager.LoadFailedPanel (failText);
+		UIManager.ShowFailedPanel (failText);
 		Time.timeScale = 0.0f;
 	}
 

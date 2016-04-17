@@ -34,7 +34,7 @@ public class ShapeShift : MonoBehaviour {
 	
 		float secondsUntilShift = Random.Range (minimumTimeUntilShift, maximumTimeUntilShift);
 		if (!shifting) {
-			StartCoroutine (waitAndShift (secondsUntilShift));
+			StartCoroutine (WaitAndShift (secondsUntilShift));
 		}
 		//yield waitAndShift(secondsUntilShift);
 		
@@ -42,7 +42,7 @@ public class ShapeShift : MonoBehaviour {
 
 	}
 
-	IEnumerator waitAndShift(float secondsUntilShift) {
+	IEnumerator WaitAndShift(float secondsUntilShift) {
 
 		shifting = true;
 		yield return new WaitForSeconds (secondsUntilShift);
