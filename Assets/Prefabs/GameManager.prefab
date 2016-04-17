@@ -63,7 +63,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb8c38384a4864d599308d4f79e8fcf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  introSceneCount: 1
+  introSceneCount: 2
   secondsBetweenLevels: 3
 --- !u!1001 &100100000
 Prefab:

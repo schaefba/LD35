@@ -19,8 +19,12 @@ public class LoadNextLevel : MonoBehaviour {
 	void OnTriggerEnter2D (Collider2D other) {
 
 		if (other.tag == "Player") {
+			Debug.Log ("Active scene index: " + SceneManager.GetActiveScene ().buildIndex);
 
-			if (SceneManager.GetActiveScene ().buildIndex < SceneManager.sceneCount + 1) {
+			Debug.Log ("Scene count: " + SceneManager.sceneCountInBuildSettings);
+
+			if (SceneManager.GetActiveScene ().buildIndex < SceneManager.sceneCountInBuildSettings + 1) {
+
 
 				UIManager.ShowLoadScreen (SceneManager.GetActiveScene ().buildIndex + 1);
 				StartCoroutine (WaitAndLoadLevel ());
