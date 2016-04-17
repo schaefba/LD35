@@ -30,6 +30,8 @@ public class LoadNextLevel : MonoBehaviour {
 				StartCoroutine (WaitAndLoadLevel ());
 
 			} else {
+
+				//UIManager.ShowVictoryScreen ();
 				// No more levels, you beat the game!
 			}
 		}
