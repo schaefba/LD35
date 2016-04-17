@@ -6,21 +6,23 @@ public class UIManager : MonoBehaviour {
 
 
 	private static GameObject levelFailedPanel;
+	private static GameObject menuPanel;
 
 	void Awake () {
 
 		levelFailedPanel = GameObject.Find ("LevelOverPanel");
-		levelFailedPanel.SetActive (false);
+		menuPanel = GameObject.Find ("MenuPanel");
 	}
 
 	// Use this for initialization
 	void Start () {
-	
+		levelFailedPanel.SetActive (false);
+		menuPanel.SetActive (false);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-	
+		
 	}
 
 	public static void LoadFailedPanel(string failText) {
@@ -33,5 +35,15 @@ public class UIManager : MonoBehaviour {
 	public static void ClearFailedPanel () {
 
 		levelFailedPanel.SetActive (false);
+	}
+
+	public static void LoadMenuPanel() {
+
+		menuPanel.SetActive (true);
+	}
+
+	public static void ClearMenuPanel() {
+
+		menuPanel.SetActive (false);
 	}
 }
