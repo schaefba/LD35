@@ -906,6 +906,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb8c38384a4864d599308d4f79e8fcf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  introSceneCount: 0
+  secondsBetweenLevels: 0
 --- !u!1 &1152319933
 GameObject:
   m_ObjectHideFlags: 0
@@ -1606,11 +1608,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 450468, guid: 994936bb045b74d70bf95cd8e348e764, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -7.57
+      value: -7.62
       objectReference: {fileID: 0}
     - target: {fileID: 450468, guid: 994936bb045b74d70bf95cd8e348e764, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -4.03
+      value: -3.98
       objectReference: {fileID: 0}
     - target: {fileID: 450468, guid: 994936bb045b74d70bf95cd8e348e764, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1636,9 +1638,71 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 450468, guid: 994936bb045b74d70bf95cd8e348e764, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.23489842
+      objectReference: {fileID: 0}
+    - target: {fileID: 450468, guid: 994936bb045b74d70bf95cd8e348e764, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.27416265
+      objectReference: {fileID: 0}
+    - target: {fileID: 450468, guid: 994936bb045b74d70bf95cd8e348e764, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5876160, guid: 994936bb045b74d70bf95cd8e348e764, type: 2}
+      propertyPath: m_Radius
+      value: 1.5682566
+      objectReference: {fileID: 0}
+    - target: {fileID: 5876160, guid: 994936bb045b74d70bf95cd8e348e764, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5095726, guid: 994936bb045b74d70bf95cd8e348e764, type: 2}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5095726, guid: 994936bb045b74d70bf95cd8e348e764, type: 2}
+      propertyPath: m_CollisionDetection
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11445098, guid: 994936bb045b74d70bf95cd8e348e764, type: 2}
+      propertyPath: Speed
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 5876160, guid: 994936bb045b74d70bf95cd8e348e764, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 994936bb045b74d70bf95cd8e348e764, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1737112663 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 150770, guid: 994936bb045b74d70bf95cd8e348e764, type: 2}
+  m_PrefabInternal: {fileID: 1737112662}
+--- !u!114 &1737112664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1737112663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 626320f15716a2647becb3234f39f8b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!58 &1737112666
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1737112663}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.8511386
 --- !u!1 &1956266931
 GameObject:
   m_ObjectHideFlags: 0
