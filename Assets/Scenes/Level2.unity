@@ -1015,6 +1015,14 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1069151753}
+    - target: {fileID: 127406, guid: e2ce3d365c5e14f408111997c00e69dd, type: 2}
+      propertyPath: m_Name
+      value: FailText
+      objectReference: {fileID: 0}
+    - target: {fileID: 195738, guid: e2ce3d365c5e14f408111997c00e69dd, type: 2}
+      propertyPath: m_Name
+      value: FailImage
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e2ce3d365c5e14f408111997c00e69dd, type: 2}
   m_IsPrefabParent: 0

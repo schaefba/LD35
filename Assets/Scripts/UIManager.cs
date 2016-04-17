@@ -28,11 +28,14 @@ public class UIManager : MonoBehaviour {
 		
 	}
 
-	public static void ShowFailedPanel(string failText) {
+	public static void ShowFailedPanel(string failTextValue, string imageName) {
 
 		levelFailedPanel.SetActive (true);
-		Text caughtText = GameObject.Find ("CaughtText").GetComponent<Text>();
-		caughtText.text = failText;
+		Text failText = GameObject.Find ("FailText").GetComponent<Text>();
+		failText.text = failTextValue;
+
+		Image failImage = GameObject.Find ("FailImage").GetComponent<Image> ();
+		failImage.sprite = Resources.Load<Sprite> (imageName);
 	}
 
 	public static void HideFailedPanel () {

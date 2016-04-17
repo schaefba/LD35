@@ -30,9 +30,9 @@ public class GameManager : MonoBehaviour {
 	
 	}
 
-	public static void LevelFailed (string failText) {
+	public static void LevelFailed (string failText, string failImageName) {
 
-		UIManager.ShowFailedPanel (failText);
+		UIManager.ShowFailedPanel (failText, failImageName);
 		Time.timeScale = 0.0f;
 	}
 
