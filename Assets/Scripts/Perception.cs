@@ -43,7 +43,7 @@ public class Perception : MonoBehaviour {
 					
 					if (hit.transform == player.transform) {
 						//Debug.Log ("I CAN SEE THE PLAYER NOW");
-						GameManager.LevelFailed ("You got caught!", "Static_Assets/police-captured");
+						GameManager.LevelFailed ("You got caught!", "Static_Assets/police-captured", "Sounds/police-siren");
 						// enemy can see the player!
 					} else {
 						
