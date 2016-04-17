@@ -46,7 +46,7 @@ GameObject:
   - 222: {fileID: 22249086}
   - 114: {fileID: 11423974}
   m_Layer: 5
-  m_Name: CaughtText
+  m_Name: FailText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -132,7 +132,7 @@ GameObject:
   - 222: {fileID: 22216130}
   - 114: {fileID: 11487128}
   m_Layer: 5
-  m_Name: Image
+  m_Name: FailImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
