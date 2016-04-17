@@ -32,7 +32,7 @@ public class Timer : MonoBehaviour {
 
 		if (timeLeft <= 0) {
 			timerText.text = "0 Seconds";
-			GameManager.LevelFailed ();
+			GameManager.LevelFailed ("You ran out of time!");
 		} else {
 			timerText.text = System.String.Format ("{0} Seconds", Mathf.Round (timeLeft));
 		}

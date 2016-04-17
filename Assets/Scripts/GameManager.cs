@@ -23,9 +23,9 @@ public class GameManager : MonoBehaviour {
 	
 	}
 
-	public static void LevelFailed () {
+	public static void LevelFailed (string failText) {
 
-		UIManager.LoadFailedPanel ();
+		UIManager.LoadFailedPanel (failText);
 		Time.timeScale = 0.0f;
 	}
 

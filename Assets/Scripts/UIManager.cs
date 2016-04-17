@@ -1,11 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour {
 
 
 	private static GameObject levelFailedPanel;
-
 
 	void Awake () {
 
@@ -23,9 +23,11 @@ public class UIManager : MonoBehaviour {
 	
 	}
 
-	public static void LoadFailedPanel() {
+	public static void LoadFailedPanel(string failText) {
 
 		levelFailedPanel.SetActive (true);
+		Text caughtText = GameObject.Find ("CaughtText").GetComponent<Text>();
+		caughtText.text = failText;
 	}
 
 	public static void ClearFailedPanel () {

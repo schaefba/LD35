@@ -435,7 +435,7 @@ GameObject:
   - 114: {fileID: 1667011293}
   - 114: {fileID: 1667011292}
   m_Layer: 5
-  m_Name: TimeCanvas
+  m_Name: TimerCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -686,6 +686,10 @@ Prefab:
     - target: {fileID: 11464142, guid: e2ce3d365c5e14f408111997c00e69dd, type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: RestartLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 11423974, guid: e2ce3d365c5e14f408111997c00e69dd, type: 2}
+      propertyPath: m_Text
+      value: '[Caught text]'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e2ce3d365c5e14f408111997c00e69dd, type: 2}
