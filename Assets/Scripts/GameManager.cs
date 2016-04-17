@@ -33,8 +33,9 @@ public class GameManager : MonoBehaviour {
 	public static void LevelFailed (string failText, string failImageName, string failAudioName) {
 
 		UIManager.ShowFailedPanel (failText, failImageName);
-		SelectFailAudio.SetAndPlayAudioClip (failAudioName);
 		Time.timeScale = 0.0f;
+		SelectFailAudio.SetAndPlayAudioClip (failAudioName);
+
 	}
 
 	public void RestartLevel () {
