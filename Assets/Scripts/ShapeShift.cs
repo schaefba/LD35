@@ -10,7 +10,8 @@ public class ShapeShift : MonoBehaviour {
 
 	private SpriteRenderer spriteRenderer;
 	private Sprite originalSprite;
-	private bool shifting;
+    private Sprite demonSprite;
+    private bool shifting;
 	private bool shifted;
 	//private float secondsUntilShift;
 	//private Time
@@ -19,7 +20,9 @@ public class ShapeShift : MonoBehaviour {
 
 		spriteRenderer = GetComponent<SpriteRenderer> ();
 		originalSprite = spriteRenderer.sprite;
-		shifting = false;
+        demonSprite = Resources.Load<Sprite>("Sprites/Demon_Idle");
+
+        shifting = false;
 		shifted = false;
 	}
 
@@ -53,13 +56,18 @@ public class ShapeShift : MonoBehaviour {
 			spriteRenderer.color = Color.white;
 			yield return new WaitForSeconds(.3f - (i*.02f));
 		}
+
 		spriteRenderer.color = Color.red;
 		shifted = true;
+        spriteRenderer.sprite = demonSprite;
 		yield return new WaitForSeconds (timeForShift);
+
 		spriteRenderer.color = Color.white;
 		shifted = false;
 		shifting = false;
-	}
+        spriteRenderer.sprite = originalSprite;
+
+    }
 
 	public bool isShifted() {
 

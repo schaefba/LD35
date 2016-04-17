@@ -32,7 +32,7 @@ public class Perception : MonoBehaviour {
 			return;
 		}
 
-        Debug.DrawLine(gameObject.transform.position, new Vector3(gameObject.transform.position.x - viewRange, gameObject.transform.position.y, 0), Color.red, Time.deltaTime, false);
+        //Debug.DrawLine(gameObject.transform.position, new Vector3(gameObject.transform.position.x - viewRange, gameObject.transform.position.y, 0), Color.red, Time.deltaTime, false);
 
         if (playerShapeShift.isShifted ()) {
 
