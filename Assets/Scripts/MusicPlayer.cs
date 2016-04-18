@@ -3,7 +3,7 @@ using System.Collections;
 
 public class MusicPlayer : MonoBehaviour {
 
-	static bool AudioBegin = false; 
+	bool AudioBegin = false; 
 	public AudioSource audio;
 
 	void Awake()

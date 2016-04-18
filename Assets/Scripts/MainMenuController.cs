@@ -4,6 +4,10 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuController : MonoBehaviour {
 
+	void Awake() {
+		Debug.Log ("Main menu awake");
+	}
+
 	// Use this for initialization
 	void Start () {
 	
