@@ -23,9 +23,9 @@ public class IntroManager : MonoBehaviour {
 		"If anyone was to see you shapeshift into your demonic form, they would almost certainly call the police.",
 
 		"Use WASD to control your character.\n\n" +
-		"You will randomly shapeshift into your demonic form as you are trying to get to work. You need to avoid being seen whenever you are in your demon form, while still making it to work on time.\n\n"+ 
+		"You will randomly shapeshift into your demonic form as you are trying to get to the factory for work. You need to avoid being seen whenever you are in your demon form, while still making it to work on time.\n\n"+ 
 		"If the timer reaches 0 seconds, you've missed your deadline for getting to work.\n\n" +
-		"Press 'next' to start the game."
+		"Press 'Next' to start the game."
 	};
 
 	private int textPosition = 0;
