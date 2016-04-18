@@ -6,16 +6,26 @@ using UnityEngine.SceneManagement;
 public class IntroManager : MonoBehaviour {
 
 	private string[] introTexts = new string[] {
-		"You're a pretty normal person. You go to work. You get groceries. You go on dates. " +
-		"\n\nExcept you're a shapeshifter. And all of your life you've been able to control your ability." +
-		" You could shapeshift at will. So it hasn't caused you any problems.",
+		"\"The devil is inside you!\" the old man yells as he runs into the alley ahead of you.",
 
-		"Recently, you've started shifting at random intervals, with no rhyme or reason. \n\n" +
-		"This poses a pretty big problem - if people were to see your true form, " +
-		"they would certainly freak out and call the police or the army, or who knows what!",
+		"What the hell was that about? He's probably just a crazy old man ...",
 
-		"You just want to go about your life - go to work, get some pastries, eat some cake. Whatever! " +
-		"But now you need to be extra careful! If you get seen while shapeshifted, you could end up in jail ... or worse."
+		"As you round the last corner before your home, you start to feel something moving around in your stomach.\n\n" +
+		"You fall to the ground on your knees, clenching your stomach in pain. The pain becomes unbearable as your vision becomes red.",
+
+		"Suddenly, the pain subsides.\n\n" +
+		"You look at the puddle in front of you, but you do not see yourself looking back. Instead, you see a hideous demon.",
+
+		"You sprint down the last block towards your house. Grasping at the door, you get inside before anyone sees you.\n\n" +
+		"There you are, looking at yourself in the bathroom mirror. And its you. But where's the demon?\n\n",
+
+		"Until you can fix your sudden shapeshifting, you need to continue going about your daily activities. "+
+		"If anyone was to see you shapeshift into your demonic form, they would almost certainly call the police.",
+
+		"Use WASD to control your character.\n\n" +
+		"You will randomly shapeshift into your demonic form as you are trying to get to work. You need to avoid being seen whenever you are in your demon form, while still making it to work on time.\n\n"+ 
+		"If the timer reaches 0 seconds, you've missed your deadline for getting to work.\n\n" +
+		"Press 'next' to start the game."
 	};
 
 	private int textPosition = 0;
