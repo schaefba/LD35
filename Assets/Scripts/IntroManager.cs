@@ -42,7 +42,8 @@ public class IntroManager : MonoBehaviour {
 			textPosition++;
 		} 
 		else {
-
+			GameObject introMusicPlayer = GameObject.Find ("IntroMusic");
+			GameObject.Destroy (introMusicPlayer);
 			SceneManager.LoadScene (numberOfIntroScenes);
 		}
 	}
