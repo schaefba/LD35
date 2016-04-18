@@ -96,7 +96,6 @@ GameObject:
   - 222: {fileID: 266164727}
   - 114: {fileID: 266164726}
   - 114: {fileID: 266164725}
-  - 114: {fileID: 266164728}
   m_Layer: 5
   m_Name: StartButton
   m_TagString: Untagged
@@ -161,8 +160,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 266164728}
-        m_MethodName: StartTheGame
+      - m_Target: {fileID: 425769408}
+        m_MethodName: StartGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -207,17 +206,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 266164723}
---- !u!114 &266164728
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 266164723}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cdda2d07d0c2145739d1b0d4141c0c72, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &425769404
 GameObject:
   m_ObjectHideFlags: 0
@@ -228,6 +216,7 @@ GameObject:
   - 224: {fileID: 425769405}
   - 222: {fileID: 425769407}
   - 114: {fileID: 425769406}
+  - 114: {fileID: 425769408}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -288,6 +277,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 425769404}
+--- !u!114 &425769408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 425769404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdda2d07d0c2145739d1b0d4141c0c72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &627116828
 GameObject:
   m_ObjectHideFlags: 0
@@ -424,7 +424,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 425769408}
         m_MethodName: QuitGame
         m_Mode: 1
         m_Arguments:

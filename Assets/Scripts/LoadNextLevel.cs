@@ -23,7 +23,7 @@ public class LoadNextLevel : MonoBehaviour {
 
 			Debug.Log ("Scene count: " + SceneManager.sceneCountInBuildSettings);
 
-			if (SceneManager.GetActiveScene ().buildIndex < SceneManager.sceneCountInBuildSettings + 1) {
+			if (SceneManager.GetActiveScene ().buildIndex < SceneManager.sceneCountInBuildSettings - 1) {
 
 
 				UIManager.ShowLoadScreen (SceneManager.GetActiveScene ().buildIndex + 1);
@@ -31,7 +31,7 @@ public class LoadNextLevel : MonoBehaviour {
 
 			} else {
 
-				//UIManager.ShowVictoryScreen ();
+				UIManager.ShowVictoryScreen ();
 				// No more levels, you beat the game!
 			}
 		}

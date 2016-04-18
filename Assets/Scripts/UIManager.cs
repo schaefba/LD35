@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour {
 
@@ -8,19 +9,25 @@ public class UIManager : MonoBehaviour {
 	private static GameObject levelFailedPanel;
 	private static GameObject menuPanel;
 	private static GameObject loadScreen;
+    private static GameObject victoryScreen;
 
-	void Awake () {
+    void Awake () {
 
 		levelFailedPanel = GameObject.Find ("LevelOverPanel");
 		menuPanel = GameObject.Find ("MenuPanel");
 		loadScreen = GameObject.Find ("LoadScreen");
-	}
+        if (SceneManager.GetActiveScene().buildIndex == SceneManager.sceneCountInBuildSettings - 1)
+        {
+            victoryScreen = GameObject.Find("VictoryScreen");
+        }
+    }
 
 	// Use this for initialization
 	void Start () {
 		levelFailedPanel.SetActive (false);
 		menuPanel.SetActive (false);
 		loadScreen.SetActive (false);
+        if(victoryScreen != null) { victoryScreen.SetActive(false); }
 	}
 	
 	// Update is called once per frame
@@ -65,5 +72,11 @@ public class UIManager : MonoBehaviour {
 		// We need to add one since indices for scenes start at zero, but we also need to skip the intro scenes in the count
 		levelText.text = string.Format ("Level {0}", (sceneNumber + 1) - GameManager.numberOfIntroScenes); 
 	}
+
+    public static void ShowVictoryScreen()
+    {
+        Time.timeScale = 0f;
+        if (victoryScreen != null) { victoryScreen.SetActive(true); }
+    }
 
 }
