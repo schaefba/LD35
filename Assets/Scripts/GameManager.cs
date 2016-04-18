@@ -49,6 +49,14 @@ public class GameManager : MonoBehaviour {
 	public void RestartGame () {
 
 		Time.timeScale = 1.0f;
+	
+		GameObject audioGameObj = GameObject.Find ("Audio Source");
+
+		if (audioGameObj != null) {
+
+			GameObject.Destroy (audioGameObj);
+		}
+
 		SceneManager.LoadScene (0);
 	}
 
