@@ -1,6 +1,4 @@
 # LD35-Sudden-Shift
-Game built for the Ludum Dare 35 game jam.
-
 This is a small game we built in the 72-hour Ludum Dare game jam. 
 
 ## Game Description
